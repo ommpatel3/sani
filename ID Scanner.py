@@ -98,7 +98,7 @@ while True:
     client.on_connect = on_connect
     client.on_publish = on_publish
 
-    client.connect("104.238.164.118",8883)
+    client.connect("broker",8883) #insert broker link
     client.loop_forever()
 
     if cv2.waitKey(1)& 0xFF == ord('q'):
